@@ -3,7 +3,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import "./app.css";
 import { Route } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Homedash from "./pages/home/Homedash";
 import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
 import NewUser from "./pages/newUser/NewUser";
@@ -19,7 +19,7 @@ function StockUpdate() {
       <div className="container">
           <Sidebar />
             <Switch>
-            <Route exact path="/" component={Home} >
+            <Route exact path="/" component={Homedash} >
             </Route> 
             <Route exact path="/users" component={UserList }>
                 </Route>
@@ -34,6 +34,7 @@ function StockUpdate() {
             <Route path="/newproduct" component={NewProduct}>
             </Route>
           </Switch>
+
       </div>
     </div>
   );

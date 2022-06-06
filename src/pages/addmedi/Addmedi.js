@@ -11,7 +11,7 @@ const Addmedi = () => {
     const [user, setUser] = useState({
         name: "",
         quantity: "",
-        description: "",
+        price: "",
         mediimage: ""
     })
 
@@ -58,7 +58,7 @@ const Addmedi = () => {
                 <h1>Register</h1>
                 <input type="text" name="name" value={user.name} placeholder="Name of Medicine" onChange={handleChange}></input>
                 <input type="number" name="quantity" value={user.quantity} placeholder="Quantity" onChange={handleChange}></input>
-                <input type="text" name="description" value={user.description} placeholder="Description" onChange={handleChange}></input>
+                <input type="number" name="price" value={user.price} placeholder="Price" onChange={handleChange}></input>
                 {/* <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Upload image" onChange={ handleChange }></input> */}
                 {/* <input type="file" name="mediimage" value={user.mediimage} onChange={handleChange} />
             <img src={file} /> */}

@@ -4,7 +4,6 @@
     background-color: white;
     position: sticky;
     top: 0;
-    z-index: 999;
   }
   
   .topbarWrapper {
@@ -20,6 +19,7 @@
     font-size: 30px;
     color: darkblue;
     cursor: pointer;
+    z-index: 12;
   }
   
   .topRight{

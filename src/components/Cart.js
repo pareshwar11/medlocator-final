@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/cart.css";
+import { Link } from 'react-router-dom';
 
 const Cart = ({ cart, setCart, handleChange }) => {
   const [price, setPrice] = useState(0);
@@ -46,7 +47,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
         <span>Rs: {price}</span>
       </div>
       <div className="billing">
-        <span>Add Delivery Address</span>
+        <span className="billbtn"><Link className="alink" to="/checkout">Add Delivery Address &#x27A9;</Link></span>
       </div>
     </article>
   );

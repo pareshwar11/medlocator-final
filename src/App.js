@@ -18,6 +18,8 @@ import Checkout from './pages/Checkout/Checkout'
 import StockUpdate from './StockUpdate';
 // import Sidebar from './components/sidebar/Sidebar';
 import Addmedi from './pages/addmedi/Addmedi';
+import Homedash from './pages/home/Homedash';
+import About from './pages/about/About';
 function App() {
   return (
     // <div>
@@ -44,7 +46,9 @@ function App() {
         <Route exact path="/stockupdate" component={StockUpdate}/>
         {/* <Route exact path="/addmedi" component={Sidebar}/> */}
         <Route exact path="/addmedi" component={Addmedi}/>
-        
+        <Route exact path="/homedash" component={Homedash} >
+            </Route>
+        <Route exact path="/about-us" component={About}></Route>
 
       </Switch>
       {/* <Cart/> */}

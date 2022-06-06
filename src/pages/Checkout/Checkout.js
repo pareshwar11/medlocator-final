@@ -13,6 +13,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 function Copyright() {
   return (
@@ -56,6 +58,8 @@ export default function Checkout() {
   };
 
   return (
+    <div>
+      <Navbar/>
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
@@ -107,5 +111,7 @@ export default function Checkout() {
         <Copyright />
       </Container>
     </ThemeProvider>
+    <Footer/>
+    </div>
   );
 }

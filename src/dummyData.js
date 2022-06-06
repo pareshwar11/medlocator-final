@@ -249,3 +249,46 @@ export const userData = [
       price: "1119",
     },
   ];
+  export const homeAbout = [
+    {
+      id: 1,
+      cover: "https://www.uberlikeapp.com/images/products/pharmacy-delivery-app/icons/search.svg",
+      title: "Find Medicine",
+      desc: "With the help of the search box provided, users can search for medicines online available in their nearby location. It will start giving suggestions as soon as you type the name of a medicine. If the suggestion doesn’t come up, you can still search for medicine by entering a proper name.",
+    },
+    {
+      id: 2,
+      cover: "https://i.ibb.co/BV6RPwj/drs-pharma-order-medicine-home-delivery.png",
+      title: "Order Medicine",
+      desc: "Users can order some standard medicine from our web application. Users can order items by clicking add to cart after going to cart, users order it to their address.",
+    },
+    {
+      id: 3,
+      cover: "https://i.ibb.co/YfqnyDs/online-medicine-concept-digital-online-medical-care-online-doctor-pharmacist-medical-consultation-do.png",
+      title: "Doctor consultancy",
+      desc: "User can consult doctor where they can detail of the doctor and user get the contact details, his /her expertise.",
+    },
+  ];
+  export const awrapper = [
+    {
+      cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
+      data: "3,000",
+      title: "SUCCESS STORIES",
+    },
+  
+    {
+      cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
+      data: "320",
+      title: "TRUSTED TUTORS",
+    },
+    {
+      cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
+      data: "1,000",
+      title: "SCHEDULES",
+    },
+    {
+      cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
+      data: "587",
+      title: "COURSES",
+    },
+  ];

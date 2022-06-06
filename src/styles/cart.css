@@ -85,7 +85,28 @@ article {
     color: black;
     font-weight: bold;
   }
-  /* .billing{
-    display: flex;
-    float: right;
-  } */
+  .billing{
+    width: 100%;
+    text-align: right;
+    margin-top: 6px;
+  }
+  .billbtn{
+    /* border: 1px solid #6762f9d5; */
+    background-color: #6762f98b;
+    font-size: 20px;
+    padding: 0px 9px;
+    height: 28px;
+    width: 38%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .billbtn:hover{
+    background-color: #6762f9fe;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 0px 9px;
+    width: 38%;
+    cursor: pointer;
+    border-radius: 5px;
+  }

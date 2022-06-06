@@ -4,7 +4,7 @@ import Slider from './Slider';
 
 const Featured = () => {
     return (
-        <div className='featured'>
+        <div className='featuredFirst'>
             <h1 className='featured-text'>Top Featured Listings</h1>
             <p className='featured-text'>Selected listings by City, State, & Zip based on views.</p>
             <br />

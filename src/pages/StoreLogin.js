@@ -14,6 +14,8 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
+import {useHistory} from 'react-router-dom';
+import axios from 'axios';
 
 function Copyright(props) {
     return (
@@ -32,13 +34,44 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function StoreLogin() {
+    const history = useHistory();
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         console.log({
-            email: data.get('email'),
+            number: data.get('number'),
             password: data.get('password'),
         });
+
+        var object = {};
+        data.forEach(function (value, key) {
+            object[key] = value;
+        });
+        var json = JSON.stringify(object);
+        let jsonObj = JSON.parse(json);
+        let contact_no = jsonObj.number;
+        let password = jsonObj.password;
+        axios.post(`http://localhost:7000/api/stores/storeLogin`, { contact_no, password })
+            .then(response => {
+                console.log(response);
+                if (response.status === 200) {
+                    alert("login successfull");
+                    console.log(response);
+                    localStorage.setItem("user", JSON.stringify(response.data.token));
+                    history.push("/stockupdate");
+                }
+                else {
+                    alert("Invalid Credentials")
+                }
+
+            }).catch(error => {
+                console.log(error);
+
+                alert("Error!", error, "error");
+            });
+
+
+
     };
 
     return (
@@ -76,10 +109,11 @@ export default function StoreLogin() {
                             margin="normal"
                             required
                             fullWidth
-                            id="email"
-                            label="Email Address"
-                            name="email"
-                            autoComplete="email"
+                            id="number"
+                            label="Contact No."
+                            name="number"
+                            autoComplete="number"
+                            
                             autoFocus
                         />
                         <TextField
