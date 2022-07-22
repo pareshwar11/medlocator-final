@@ -1,6 +1,9 @@
 # bio
 hello, this is our simple project. it has been made using
 
+ ## Live Project
+ [Click Here!](https://medlocfinal.vercel.app/home)
+
 *** Front-end ***
 1. React.js
 2. JSX
