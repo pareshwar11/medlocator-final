@@ -1,15 +1,15 @@
 # bio
-hello, this is our simple project. it has been made using
+hello, this is our simple project. it has been made using ReactJS, REST API, Express.
 
  ## Live Project
  [Click Here!](https://medlocfinal.vercel.app/home)
 
-*** Front-end ***
+** Front-end **
 1. React.js
 2. JSX
 3. Material-Ui
 
-*** Back-end ***
+** Back-end **
 1.Node.js
 2.Express.js
 
